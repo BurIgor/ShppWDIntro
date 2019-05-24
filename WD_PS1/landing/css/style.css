@@ -1,0 +1,134 @@
+body {
+	font-family: Verdana, Helvetica, sans-serif;	
+}
+header {
+	display: flex;
+	font-weight: 700;
+}
+button:focus {
+	outline: none;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+.header__logo {
+	width: 50%;
+	padding: 1rem 3rem;
+	font-size: 3rem;
+	/*font-weight: 500;*/
+}
+.header__logo-color-part {
+	color: rgb(26, 188, 156);
+	letter-spacing: -8px;
+}
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+}
+.header__menu-nav {
+	margin: auto 2rem;
+	font-variant: small-caps;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+.container {
+	min-width: 1190px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.main {
+	background-color: rgb(26, 188, 156);		
+	padding: 2rem 0;
+}
+.main-img {
+	display: inline-block;
+	width: 35%;	
+	vertical-align: middle;
+	margin-right: 12rem;
+}
+.main-img img {
+	width: 100%;
+	padding-left: 35%;
+}
+.main-text__title {
+	font-size: 1.9rem;
+	font-weight: 400;
+	color: white;
+	letter-spacing: -1px;
+	margin-bottom: 3rem;
+}
+.main-text {
+	display: inline-block;
+	font-size: 1rem;
+	color: white;
+	width: 59%;
+	max-width: 550px;
+	vertical-align: middle;
+	text-align: justify;
+	word-spacing: -2px;
+}
+.main-text__description {
+	margin-bottom: 3rem;
+}
+.button {
+	border-radius: 8px;
+	background-color: rgb(26, 188, 156);	
+	border: 2px solid white;
+	padding: 1rem 2rem;
+	font-size: 1.5rem;
+	color: white;
+}
+.button:hover {
+	background-color: forestgreen;
+}
+.features {
+	padding: 4rem;
+	background-color: #fff;
+}
+.features-wrap::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.features-block {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	float: left;
+}
+.features-block__img {
+	height: 120px;
+	width: 120px;	
+	margin: 0 auto 1rem;
+	border-radius: 50%;
+	background-color: rgb(26, 188, 156);
+}
+.features-block__img > img {
+	width: 80px;		
+	margin-top: 20%;
+}
+.contact {
+	min-width: 1190px;
+	background-color: rgb(26, 188, 156);		
+	padding: 2rem 0;
+}
+.contact__title {
+	text-align: center;
+	font-weight: 500;
+	letter-spacing: 1px;
+	color: white;
+}
+.contact-inputs {
+	margin-left: 30%;
+	width: 100rem;
+}
+.contact-inputs__field {
+	width: 50%;
+	margin: 0.5rem auto;
+	padding: 0.5rem;
+}
+.submit {
+	margin-top: 2rem;
+	margin-left: 10%;
+}

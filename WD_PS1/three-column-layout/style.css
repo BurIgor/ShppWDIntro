@@ -1,0 +1,30 @@
+body {
+	background-color: #a6a500;
+	margin: 0;
+}
+
+.column {
+	float: left;
+	padding: 1rem;
+	box-sizing: border-box;
+	min-height: calc(100vh - 10rem);
+}
+
+.left, .right {
+	width: 25%;
+	background-color: #fffd00;
+}
+
+.middle {
+	width: 50%;
+	background-color: #a2ef00;
+}
+
+.row:after {
+	display: block;
+}
+
+.bottom {
+	height: 8rem;
+	padding: 1rem;
+}

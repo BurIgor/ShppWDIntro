@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing page</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<nav class="header__logo">
+			<a href="#" class="link_hover">N<span class="header__logo-color-part">++</span></a>
+		</nav>
+		
+		<nav class="header__menu">
+			<div class="header__menu-nav">
+				<a href="#">products</a>
+			</div>
+			<div class="header__menu-nav">
+				<a href="#">about us</a>
+			</div>
+			<div class="header__menu-nav">
+				<a href="#">contact us</a>
+			</div>			
+			
+		</nav>
+	</header>
+
+	<main class="main">
+		<div class="container">
+
+			<div class="main-img">
+				<img src="img/iphone.png" alt="iphone picture">
+			</div>
+			<!-- /.main-img -->
+
+			<div class="main-text">
+				
+				<h1 class="main-text__title">Our awesome app is ready to use!</h1>
+
+				<p class="main-text__description">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatore vero distinctio, quos ratione tempore tempora alias blanditiis omnis veritatis, excepturi eum magni dignissimos libero a at nobis nihil quo. Animi!
+				</p>
+
+				<button class="button">Buy now!</button>
+			</div>
+			<!-- /.main-text -->
+		</div>
+		
+	</main>
+
+	<section class="features">
+
+		<div class="container">
+
+			<div class="features-wrap">
+				
+				<div class="features-block">
+					<div class="features-block__img">
+						<img src="img/direction.png" alt="choosing-decision">
+					</div>
+					<!-- /.features-block__img -->
+
+					<h3 class="feature-block__title">Web development</h3>
+
+					<div class="feature-block__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus inventore voluptates vitae, nemo, ipsum autem. Nobis delectus eius magnam. Eius itaque sed non iusto quidem!
+					</div>
+					<!-- /.feature-block__text -->
+				</div>
+				<!-- /.features-block -->
+
+				<div class="features-block">
+					<div class="features-block__img">
+						<img src="img/android.png" alt="android">
+					</div>
+					<!-- /.features-block__img -->
+
+					<h3 class="feature-block__title">Mobile development</h3>
+
+					<div class="feature-block__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, doloremque, quos. Nobis omnis mollitia corporis sapiente, nisi rerum nesciunt. Optio minima necessitatibus labore accusantium odio ipsam officia, veniam est voluptate!
+					</div>
+					<!-- /.feature-block__text -->
+				</div>
+				<!-- /.features-block -->
+
+				<div class="features-block">
+					<div class="features-block__img">
+						<img src="img/cloud.png" alt="cloud">
+					</div>
+					<!-- /.features-block__img -->
+
+					<h3 class="feature-block__title">Hightload</h3>
+
+					<div class="feature-block__text">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, aliquam id, accusantium eos atque tenetur. Impedit consequatur voluptatem, ducimus illum ullam reprehenderit aut blanditiis, sed error inventore libero!
+					</div>
+					<!-- /.feature-block__text -->
+				</div>
+				<!-- /.features-block -->
+			</div>
+			<!-- /.features-wrap -->
+		</div>
+		<!-- /.container -->
+
+	</section>
+
+	<footer class="contact">
+		
+		<h1 class="contact__title">Contuct us!</h1>
+
+		<div class="contact-inputs">
+			<form>
+				<input type="text" class="contact-inputs__field" name="username" placeholder="Type here your name, please"><br>
+				<input type="email" class="contact-inputs__field" name="email" placeholder="Type here your email, please"><br>
+				<input type="tel" class="contact-inputs__field" name="tel" placeholder="Type here your phone, please"><br>
+				<input type="number" class="contact-inputs__field" name="number" placeholder="Type here your favorite number, please"><br>
+				<input type="hidden" class="contact-inputs__field" name="hidden" placeholder="This is hidden information here. You can't see it, sorry."><br>
+				<input type="password" class="contact-inputs__field" name="psw" placeholder="Type password, please"><br>
+				<input type="search" class="contact-inputs__field" name="search" placeholder="Choose or type text for searching, please"><br>
+				<input type="url" class="contact-inputs__field" name="url" placeholder="Type your website, please"><br>
+				<input type="image" src="img/send-image.png" alt="send submit"><br><br>
+				Select your favorite color: 
+				<input type="color" name="color"><br><br>
+				Your birthday: 
+				<input type="date" name="date"><br><br>
+				Your birthday (more precisely, please): 
+				<input type="datetime-local" name="datetime-local"><br><br>
+
+				<input type="checkbox" name="vehicle1" value="Bike">I have a bike<br>
+				<input type="checkbox" name="vehicle1" value="Bike">I have a bas<br><br>
+
+				What is your favorite vacation month: 
+				<input type="month" name="month"><br><br>
+				What week you can't remember?
+				<input type="week" name="week"><br><br>
+				What time do you usually wake up?
+				<input type="time" name="time" value='10:30'><br><br>
+				<input type="button" onclick="alert('Do not press any horrible button. It may be dangerous!!!!')" value="Have fun!"><br><br>
+				You should select a file:
+				<input type="file" name="file"><br><br>
+
+				<input type="radio" name="radio" value="male" checked>Male<br>
+				<input type="radio" name="radio" value="female" checked>Female<br>
+				<input type="radio" name="radio" value="child" checked>Child<br><br>
+
+				What is your mood?
+				<input type="range" name="range"><br><br>
+
+				<textarea name="textarea" cols="90" rows="6" placeholder="Ask your question"></textarea><br><br>
+
+				<input type="reset" value="All's wrong, I'll start over"><br><br>		
+				<input type="submit" class="button submit" value="Send email!">
+
+			</form>
+		</div>
+		<!-- /.contact__inputs -->
+
+	</footer>
+
+</body>
+</html>
