@@ -24,6 +24,14 @@ button:focus {
 	background-color: rgb(32, 32, 32);
 	color: rgb(210, 190, 140);
 }
+.second-form {
+	display: inline-block;
+	width: 50%;
+	height: 100vh;
+	vertical-align: top;
+	background-color: rgb(32, 32, 32);
+	color: rgb(210, 190, 140);
+}
 .form__wrapper {
 	vertical-align: middle;
 }
@@ -33,13 +41,13 @@ button:focus {
 	text-transform: uppercase;
 	font-size: 50px;
 	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-bottom: 5%;
 }
-.label,.input,.check,.password-label {
+.label,.input,.check,.password-label,.textarea {
 	margin-left: 15%;	
 	font-size: 20px;
 }
-.label,.input,.check {
+.label,.input,.check__input {
 	margin-bottom: 5%;
 }
 .password-label{
@@ -52,7 +60,7 @@ button:focus {
 	font-size: 20px;
 	padding: 10px 0;
 }
-.hint,.button {
+.hint,.button,.second-form__information {
 	color: rgb(210, 210, 210);
 	margin-left: 15%;
 }
@@ -64,11 +72,16 @@ button:focus {
 	padding-left: 15px;
 }
 .button {
-	margin-top: 10%;	
+	margin-top: 5%;	
 	border: none;
 	background-color: rgb(192,153,79);
 	padding: 15px;
 	font-size: 30px;
 	font-weight: 500;
 	width: 70%;
+}
+.second-form__information {
+	border-left: 2px solid;
+	font-size: 18px;
+	padding-left: 10px;
 }
