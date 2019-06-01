@@ -1,10 +1,23 @@
 let form = document.getElementById('solution-form');
+
 form.onsubmit = function(e) {
 	e.preventDefault();
-	console.log(form.leftMark.value);
+	
+	let leftNumber = Math.min(form.leftMark.value, form.rightMark.value);
+	let rightNumber = Math.max(form.leftMark.value, form.rightMark.value);
+
+	if (Number.isNaN(leftNumber)) {
+		alert("Некорректный ввод. Нужно ввести числа!");
+		return;
+	}
+
+	let sum = 0, remainder = 0;
+
+	for (let i = leftNumber; i <= rightNumber; i++) {
+		remainder = Math.abs(i % 10);
+		if ((remainder % 10 == 2) || (remainder % 10 == 3) || (remainder % 10 == 7)) 
+			sum += i;		
+	}
+
+	document.getElementById('result').innerHTML = 'Результат: ' + sum;
 }
-// console.log(form);
-// let leftMark = document.getElementById('leftMark').value;
-// console.log(leftMark);
-// let rightMark = document.getElementById('rightMark')
-// console.log(rightMark);
