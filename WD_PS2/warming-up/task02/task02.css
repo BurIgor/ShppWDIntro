@@ -1,0 +1,32 @@
+body {
+	font-family: sans-serif;
+}
+
+.main {
+	display: flex;
+	height: 100vh;
+	min-height: 600px;
+	padding: 16px;
+	background-color: rgba(0,0,0,0.1);
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: space-around;
+	
+}
+
+.content {
+	background-color: #ccc;
+	border: 1px solid black;
+	margin: 16px;
+	padding: 16px;
+}
+
+.task {
+	width: 80%;
+}
+
+.solution {
+	width: 60%;
+}
