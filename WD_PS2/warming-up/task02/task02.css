@@ -6,21 +6,20 @@ body {
 	display: flex;
 	height: 100vh;
 	min-height: 600px;
-	padding: 16px;
+	padding: 8px 16px;
 	background-color: rgba(0,0,0,0.1);
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
 	flex-wrap: wrap;
-	align-content: space-around;
-	
+	align-content: space-around;	
 }
 
 .content {
 	background-color: #ccc;
 	border: 1px solid black;
-	margin: 16px;
-	padding: 16px;
+	margin: 8px;
+	padding: 8px 16px;
 }
 
 .task {

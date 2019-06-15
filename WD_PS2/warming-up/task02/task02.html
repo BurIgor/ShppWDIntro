@@ -7,18 +7,39 @@
 </head>
 <body>
 	<main class="main">
+
 		<header class="content task">
 			<h1>Задание</h1>
 			<p>Пользователь вводит время в секундах.</p>
 			<p>Вывести в формате: hh:mm:ss (01:05:20).</p>
 			<p>Ниже наоборот: пользователь вводит время в формате hh:mm:ss, вывести количество секунд.</p>
 		</header>
+
 		<section class="content solution">
-			<h1>Введите время в секундах</h1>
+			<h1>Перевод секунды --> hh:mm:ss</h1>
+			<form id="task1">
+				<label for="task02.js" class="solution-form__label">Введите время в секундах: </label>
+				<input type="number" class="solution-form__input" name="seconds" value="0" min="0" > <!--  max="86400" > -->
+				<label class="solution-form__label" id="result-time">   Результат:</label>				
+				<br><br>
+				<button class="solution-form__button">Рассчитать</button>
+			</form>			
 		</section>
+
 		<section class="content solution">
-			<h1>Введите время в формате hh:mm:ss</h1>
+			<h1>Перевод hh:mm:ss --> секунды</h1>
+			<form id="task2">
+				<label for="task02.js" class="solution-form__label">Время в формате hh:mm:ss : </label>
+				<input type="text" class="solution-form__input" name="time" placeholder="00:00:00" size="5">
+				<label class="solution-form__label" id="result-seconds">   Результат:</label>				
+				<br><br>
+				<button class="solution-form__button">Рассчитать</button>
+			</form>
+			<!-- /.task2 -->
 		</section>
+
 	</main>
+
+	<script src="task02.js"></script>
 </body>
 </html>
