@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WD_PS2 Task03</title>
+	<link rel="stylesheet" href="task03.css">
+</head>
+<body>
+	<main class="main">
+
+		<header class="content task">
+			<h1>Задание</h1>
+			<p>Даны два input[type=datetime-local].</p>
+			<p>Вычислить промежуток времени прошедший между датами и вывести пользователю сообщение типа: </p>
+			<p>2 year(s), 1 month(s), 3 day(s), 5 hour(s), 10 minute(s), 15 second(s).</p>
+		</header>
+
+		<section class="content solution">
+			<h1>Промежуток времени между датами</h1>
+			<form id="task">
+				<label class="solution-form__label">Первая дата: </label>
+				<input type="datetime-local" class="solution-form__input" name="date1">
+				<label class="solution-form__label">Вторая дата: </label>
+				<input type="datetime-local" class="solution-form__input" name="date2">							
+				<br><br> 
+				<button class="solution-form__button">Рассчитать</button>
+				<br><br> 
+				<label class="solution-form__label" id="result"></label>	
+			</form>			
+		</section>
+		
+	</main>
+
+	<script src="task03.js"></script>
+</body>
+</html>
