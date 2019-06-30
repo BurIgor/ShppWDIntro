@@ -1,0 +1,46 @@
+body {
+	font-family: sans-serif;
+}
+
+.main {
+	display: flex;
+	height: 96vh;
+	min-height: 600px;
+	padding: 8px 16px;
+	background-color: rgba(0,0,0,0.1);
+	/*justify-content: space-around;*/
+	align-items: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: space-around;	
+}
+
+.content {
+	background-color: #ccc;
+	border: 1px solid black;
+	margin: 8px;
+	padding: 8px 16px;
+}
+
+.task {
+	width: 80%;
+	min-width: 800px;
+}
+
+.solution {
+	width: 60%;
+	min-width: 600px;
+}
+
+#chessBoard{
+    display: inline-block;
+    border: 4px double black;
+}
+
+#chessBoard div{
+    line-height: 1px;
+}
+
+#chessBoard span{
+    display: inline-block;
+}

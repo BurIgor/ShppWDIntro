@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WD_PS2 Task04</title>
+	<link rel="stylesheet" href="task04.css">
+</head>
+<body>
+	<main class="main">
+
+		<header class="content task">
+			<h1>Задание</h1>
+			<p>Пользователь вводит габариты шахматной доски (в формате ‘8x8’). Вывести (как бы нарисовать) шахматную доску.</p>
+		</header>
+
+		<section class="content solution">
+			<h1>Габариты шахматной доски </h1>
+			<form id="task">
+				<label class="solution-form__label">Введите ширину клетки: </label>
+				<input type="number" class="solution-form__input" name="poleWidth" value="40" min="9">
+				<br><br>
+				<label class="solution-form__label">Введите габариты (в формате 8х8): </label>
+				<input type="text" class="solution-form__input" name="dimensions" value="8x8">
+				<br><br> 
+				<button class="solution-form__button">Вывести доску</button>
+				<br><br> 
+				<label class="solution-form__label" id="result"></label>	
+			</form>			
+		</section>
+
+		<div id="chessBoard"></div>
+		
+	</main>
+
+	<script src="task04.js"></script>
+</body>
+</html>
