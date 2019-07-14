@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WD_PS2 Task05</title>
+	<link rel="stylesheet" href="task05.css">
+</head>
+<body>
+	<main class="main">
+
+		<header class="content task">
+			<h1>Задание</h1>
+			<p>Дан некий textarea, в который пользователь вводит ссылки или ip через запятую.</p>
+			<p>Когда textarea станет неактивным - проверить введены ли ссылки/ip, удалить дичь (то что не ссылки и не ip), и вывести их отсортированным по алфавиту списком ссылок (Пользователю http:// и https:// не показывать, при клике на ссылку открывается новое окно).</p>
+		</header>
+
+		<section class="content solution">
+			<h1>Введите ссылки или ip через запятую</h1>			
+			<form id="task">
+				<p><textarea class="solution-form__input" name="text" cols="80" rows="10" onchange="orderliness()"></textarea></p>
+				<button class="solution-form__button">Упорядочить список</button>
+				<div id="links"></div>
+			</form>			
+		</section>		
+		
+	</main>
+
+	<script src="task05.js"></script>
+</body>
+</html>
