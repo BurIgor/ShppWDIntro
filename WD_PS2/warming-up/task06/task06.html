@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WD_PS2 Task06</title>
+	<link rel="stylesheet" href="task06.css">
+</head>
+<body>
+	<main class="main">
+
+		<header class="content task">
+			<h1>Задание</h1>
+			<p>В textarea вводим текст, в input - регулярку или текст.</p>
+			<p>После нажатии кнопки - вывести тот же текст, но в нем все, что подходит под регулярку выделено желтым (подсвечено). (Вот и пригодился тег <mark>mark</mark>)</p>
+		</header>
+
+		<section class="content solution">
+			<h1>Введите произвольный текст</h1>			
+			<form id="task">
+				<p><textarea class="solution-form__input" name="text" cols="80" rows="10"></textarea></p>				
+				<label class="solution-form__label">Введите регулярку или текст: </label>
+				<input type="text" class="solution-form__input" name="regular"><br><br>
+				<button class="solution-form__button">Вывести обработаный текст</button>
+				<div id="markedText"></div>
+			</form>			
+		</section>		
+		
+	</main>
+
+	<script src="task06.js"></script>
+</body>
+</html>

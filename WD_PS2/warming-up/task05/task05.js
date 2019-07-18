@@ -32,15 +32,13 @@ orderliness = function() {
 	let clearLinks = arrayLinks.map(function(str) {
 		if (~str.indexOf('https://')) return str.substring(8) + ' https://';
 		if (~str.indexOf('http://')) return str.substring(7) + ' http://';
-		if (str.match(/\./g).length == 3) return str + ' \/\/';
+		if (str.match(/\./g).length == 3) return str + ' http://';
 		return str + ' ';
-	});
-
-	clearLinks.sort();
+	}).sort();
 
 	// output a list of links
 	let links = document.getElementById('links');
-	links.innerHTML = "<br />";
+	links.innerHTML = "<br>";
 
 	for (let i = 0; i < clearLinks.length; i++) {
 		let str = clearLinks[i].split(' ');
